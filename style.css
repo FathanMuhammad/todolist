@@ -9,6 +9,10 @@
     min-height: 100vh;
     background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .todo-app{
     width: 100%;
@@ -16,7 +20,8 @@
     background: #fff;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
-    border-radius: 10px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .todo-app h2{
     color: #002765;
@@ -54,7 +59,8 @@ button{
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 40px; 
+    border-radius: 40px;
+    transition: background 0.3s ease;
 }
 button:hover{
     background: #b73a2c;
@@ -66,6 +72,8 @@ ul li{
     user-select: none;
     cursor: pointer;
     position: relative;
+    background: #fff;
+    border-bottom: 1px solid #edeef0;
 }
 ul li::before{
     content: '';
@@ -99,4 +107,80 @@ ul li span{
 }
 ul li span:hover{
     background: #edeef0;
+}
+
+@media (max-width: 768px) {
+    .todo-app {
+        padding: 25px 25px 35px;
+    }
+
+    .todo-app h2 {
+        font-size: 18px;
+    }
+
+    .row {
+        flex-direction: ;
+        padding-left: 0px;
+    }
+
+    button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 15px 8px 10px 40px;
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+    }
+
+    ul li span {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    .todo-app {
+        padding: 25px 25px 35px;
+    }
+
+    .todo-app h2 {
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: ;
+        padding-left: 0px;
+    }
+
+    button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 15px 8px 10px 40px;
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+    }
+
+    ul li span {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
