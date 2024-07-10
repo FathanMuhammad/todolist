@@ -40,7 +40,7 @@
     justify-content: space-between;
     background: #edeef0;
     border-radius: 30px;
-    padding-left: 20px;
+
     margin-bottom: 25px;
 }
 input{
@@ -61,7 +61,7 @@ button{
     cursor: pointer;
     border-radius: 40px;
     transition: background 0.3s ease;
-    margin-left: 10px;
+    
 }
 button:hover{
     background: #b73a2c;
@@ -120,13 +120,19 @@ ul li span:hover{
     }
 
     .row {
-        padding-left: 0px;
+        display: block;
     }
-
+    
+    input{
+        flex: auto;
+        padding: 10px;
+        font-weight: 14px;
+    }
     button {
         padding: 10px 30px;
         font-size: 14px;
         width: 100%;
+        margin-top: 20px;
    
     }
 
@@ -146,43 +152,5 @@ ul li span:hover{
         height: 30px;
         font-size: 18px;
         line-height: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .todo-app {
-        padding: 15px 10px 25px;
-    }
-
-    .todo-app h2 {
-        font-size: 16px;
-    }
-
-    .row {
-        padding-left: 5px;
-    }
-
-    button {
-        padding: 8px 20px;
-        font-size: 12px;
-        width: 100%;
-    }
-
-    ul li {
-        font-size: 12px;
-        padding: 10px 8px 8px 35px;
-    }
-
-    ul li::before {
-        height: 20px;
-        width: 20px;
-        top: 8px;
-    }
-
-    ul li span {
-        width: 25px;
-        height: 25px;
-        font-size: 16px;
-        line-height: 25px;
     }
 }
